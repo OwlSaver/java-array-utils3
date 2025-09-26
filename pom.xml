@@ -68,7 +68,7 @@
           <configuration>
               <archive>
                   <manifest>
-                      <mainClass>com.github.OwlSaver3.App</mainClass>
+                      <mainClass>com.github.owlsaver3.App</mainClass>
                   </manifest>
               </archive>
           </configuration>
