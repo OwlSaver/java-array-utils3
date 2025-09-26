@@ -25,7 +25,17 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
+    <dependency>
+        <groupId>org.xerial</groupId>
+        <artifactId>sqlite-jdbc</artifactId>
+        <version>3.45.1.0</version> <!-- Use the latest stable version -->
+    </dependency>
+    <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20231013</version> <!-- Use the latest stable version -->
+    </dependency>
+</dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -51,6 +61,13 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
+          <configuration>
+              <archive>
+                  <manifest>
+                      <mainClass>com.github.OwlSaver.App</mainClass>
+                  </manifest>
+              </archive>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
