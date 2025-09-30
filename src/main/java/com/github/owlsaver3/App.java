@@ -14,7 +14,7 @@ public class App {
                 System.out.println(arg);
             }
         }
-        System.out.println("Hello World!");
+        System.out.println("Hello to the World!");
         System.out.println("Have a nice day.");
     }
 }
