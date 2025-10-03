@@ -7,6 +7,8 @@ package com.github.owlsaver3;
  *
  */
 public class App {
+    private final String MESSAGE = "Hello World!";
+
     public static void main(String[] args) {
         if (args.length > 0) {
             System.out.println("Arguments:");
