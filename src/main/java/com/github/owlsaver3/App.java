@@ -7,7 +7,7 @@ package com.github.owlsaver3;
  *
  */
 public class App {
-    private final String MESSAGE = "Hello World!";
+    private static final String MESSAGE = "Hello World!";
 
     public static void main(String[] args) {
         if (args.length > 0) {
@@ -18,5 +18,10 @@ public class App {
         }
         System.out.println("Hello to the World!");
         System.out.println("Have a nice day.");
+        printMessage(MESSAGE);
+    }
+
+    public static void printMessage(String aMsg) {
+        System.out.println(aMsg);
     }
 }
